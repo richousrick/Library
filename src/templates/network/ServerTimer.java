@@ -54,7 +54,7 @@ public class ServerTimer {
 		 *
 		 */
 		public ServerThread(Socket sock) {
-			this.sock = sock;
+			this.setSock(sock);
 		}
 		
 		/* (non-Javadoc)
@@ -64,8 +64,15 @@ public class ServerTimer {
 		public void run() {
 			
 			
-			
 			disconnect(Thread.currentThread());
+		}
+
+		public Socket getSock() {
+			return sock;
+		}
+
+		public void setSock(Socket sock) {
+			this.sock = sock;
 		}
 		
 	}

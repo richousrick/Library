@@ -2,8 +2,6 @@ package datatypes;
 
 import java.util.ArrayList;
 
-import javax.swing.plaf.SliderUI;
-
 /**
  *@TODO Annotate Class
  *

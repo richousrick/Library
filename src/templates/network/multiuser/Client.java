@@ -72,7 +72,7 @@ public class Client extends ConnectionHandler{
 	
 	
 	public static void main(String[] args) throws UnknownHostException, IOException {
-		Client c = new Client("localhost", 9999);
+		new Client("localhost", 9999);
 	}
 	
 }

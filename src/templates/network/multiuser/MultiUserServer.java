@@ -222,7 +222,8 @@ public class MultiUserServer {
 		void handleConnection() throws InterruptedException {
 			while(connect.get()){
 				if(!recieved.isEmpty()){
-					Object object = recieved.dequque();
+					Object data = recieved.dequque();
+					System.out.println(data);
 				}else{
 					sleep(100);
 				}
@@ -232,7 +233,7 @@ public class MultiUserServer {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		MultiUserServer ms = new MultiUserServer();
+		new MultiUserServer();
 	}
 	
 }
